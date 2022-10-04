@@ -1,7 +1,7 @@
 FROM fedora
 RUN dnf -yqq upgrade
 RUN dnf -yqq install httpd
-COPY myinfo.html /var/www/html/
-ENTRYPOINT ENTRYPOINT /usr/sbin/httpd -DFOREGROUND
+COPY data/myinfo.html /var/www/html/
+ENTRYPOINT /usr/sbin/httpd -DFOREGROUND
 EXPOSE 80
 VOLUME /data
