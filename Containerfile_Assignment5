@@ -5,4 +5,3 @@ VOLUME /data
 EXPOSE 80
 ENTRYPOINT /usr/sbin/httpd -DFOREGROUND
 
-
